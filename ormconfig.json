@@ -6,7 +6,7 @@
   "password": "suresh",
   "database": "serve_api",
   "entities": [
-    "src/models/*.entity.{ts,js}"
+    "**/*.entity{.ts,.js}"
   ],
   "migrationsTableName": "migration",
   "migrations": [
