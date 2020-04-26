@@ -542,6 +542,11 @@
     tslib "1.11.1"
     uuid "7.0.3"
 
+"@nestjs/mapped-types@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-0.0.3.tgz#7b50206935452e74a270ed9a07ad05a6305b0b42"
+  integrity sha512-PKxWOVaMyvj9/82afLpMZ/+Pb5JacCURRP/FY/tCDtsoS+MABeQGj2oqbtH4uQUiL4n+H0IigvQGHWQ1zPPknA==
+
 "@nestjs/platform-express@^7.0.0":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-7.0.9.tgz#abfa9ae8855ddc889f644d4c4664682a4b11ff29"
@@ -561,6 +566,15 @@
     "@angular-devkit/core" "9.0.6"
     "@angular-devkit/schematics" "9.0.6"
     fs-extra "8.1.0"
+
+"@nestjs/swagger@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/swagger/-/swagger-4.5.3.tgz#efa489724b42e09aa3022abfd9b0660ecb91e721"
+  integrity sha512-qYMuL+HwtAUkAtS2ylFOlFCir3OSsgtB5pgTHvpbCqmo6LzqW3mjr4s5BxBBvg6DKQyQ0uYY4uhSIuFlqf7UMQ==
+  dependencies:
+    "@nestjs/mapped-types" "0.0.3"
+    lodash "4.17.15"
+    path-to-regexp "3.2.0"
 
 "@nestjs/testing@^7.0.0":
   version "7.0.9"
@@ -811,6 +825,11 @@
   integrity sha512-3ZcoyPYHVOCcLpnfZwD47KFLr8W/mpUcgjpf1M4Q78TMJIw7KMAHSjiCLJp1z3ZrBR9pTLbe191O0TldFK5zcw==
   dependencies:
     source-map "^0.6.1"
+
+"@types/validator@13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.0.0.tgz#365f1bf936aeaddd0856fc41aa1d6f82d88ee5b3"
+  integrity sha512-WAy5txG7aFX8Vw3sloEKp5p/t/Xt8jD3GRD9DacnFv6Vo8ubudAsRTXgxpQwU0mpzY/H8U4db3roDuCMjShBmw==
 
 "@types/webpack-sources@*":
   version "0.1.7"
@@ -1839,6 +1858,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+class-transformer@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.2.3.tgz#598c92ca71dcca73f91ccb875d74a3847ccfa32d"
+  integrity sha512-qsP+0xoavpOlJHuYsQJsN58HXSl8Jvveo+T37rEvCEeRfMWoytAyR0Ua/YsFgpM6AZYZ/og2PJwArwzJl1aXtQ==
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -1848,6 +1872,16 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+class-validator@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/class-validator/-/class-validator-0.12.2.tgz#2ceb72f88873e9c714cf5f9c278cbc71f6f6c8ef"
+  integrity sha512-TDzPzp8BmpsbPhQpccB3jMUE/3pK0TyqamrK0kcx+ZeFytMA+O6q87JZZGObHHnoo9GM8vl/JppIyKWeEA/EVw==
+  dependencies:
+    "@types/validator" "13.0.0"
+    google-libphonenumber "^3.2.8"
+    tslib ">=1.9.0"
+    validator "13.0.0"
 
 cli-boxes@^2.2.0:
   version "2.2.0"
@@ -3323,6 +3357,11 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
+google-libphonenumber@^3.2.8:
+  version "3.2.8"
+  resolved "https://registry.yarnpkg.com/google-libphonenumber/-/google-libphonenumber-3.2.8.tgz#fb5898cbae18104d456e0fd80df52d860a3eb2b8"
+  integrity sha512-iWs1KcxOozmKQbCeGjvU0M7urrkNjBYOSBtb819RjkUNJHJLfn7DADKkKwdJTOMPLcLOE11/4h/FyFwJsTiwLg==
+
 got@^9.6.0:
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
@@ -4559,7 +4598,7 @@ lodash.toarray@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
   integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
 
-lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
+lodash@4.17.15, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -6725,6 +6764,18 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
+swagger-ui-dist@^3.18.1:
+  version "3.25.1"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-3.25.1.tgz#8aa9c3217849722f6d8c7fac6b2222f9082227bb"
+  integrity sha512-Sw/K95j1pT9TZtLKiHDEml7YqcXC9thTTQjxrvNgd9j1KzOIxpo/5lhHuUMAN/hxVAHetzmcBcQaBjywRXog8w==
+
+swagger-ui-express@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/swagger-ui-express/-/swagger-ui-express-4.1.4.tgz#8b814ad998b850a1cf90e71808d6d0a8a8daf742"
+  integrity sha512-Ea96ecpC+Iq9GUqkeD/LFR32xSs8gYqmTW1gXCuKg81c26WV6ZC2FsBSPVExQP6WkyUuz5HEiR0sEv/HCC343g==
+  dependencies:
+    swagger-ui-dist "^3.18.1"
+
 symbol-observable@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
@@ -7005,7 +7056,7 @@ tsconfig-paths@3.9.0, tsconfig-paths@^3.4.0, tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@1.11.1, tslib@^1.8.1, tslib@^1.9.0:
+tslib@1.11.1, tslib@>=1.9.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
@@ -7289,6 +7340,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validator@13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.0.0.tgz#0fb6c6bb5218ea23d368a8347e6d0f5a70e3bcab"
+  integrity sha512-anYx5fURbgF04lQV18nEQWZ/3wHGnxiKdG4aL8J+jEDsm98n/sU/bey+tYk6tnGJzm7ioh5FoqrAiQ6m03IgaA==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"
