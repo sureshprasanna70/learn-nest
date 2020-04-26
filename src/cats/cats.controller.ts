@@ -1,6 +1,6 @@
 import { Controller, Param, Get } from '@nestjs/common';
 import { CatsService } from './cats.service';
-
+import {ItemDTO} from './dto/item.dto'
 
 
 @Controller('cats')
@@ -9,7 +9,7 @@ export class CatsController {
   
  
   @Get()
-  public async getAll() {
+  public async getAll(): Promise<ItemDTO[]> {
     return await this.catsService.getAll();
   }
 
