@@ -8,8 +8,8 @@ async function bootstrap() {
   if (!configService.isProduction()) {
 
     const document = SwaggerModule.createDocument(app, new DocumentBuilder()
-      .setTitle('Item API')
-      .setDescription('My Item API')
+      .setTitle('Serve API')
+      .setDescription('My Nest.js API')
       .build());
 
     SwaggerModule.setup('docs', app, document);
