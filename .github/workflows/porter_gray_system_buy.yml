@@ -35,10 +35,10 @@ jobs:
         sudo add-apt-repository ppa:cncf-buildpacks/pack-cli
         sudo apt-get update
         sudo apt-get install pack-cli
+        sudo apt-get update && apt-get upgrade -y && apt-get install -y nodejs npm
         sudo pack build registry.digitalocean.com/explore-porter/gray-system-buy-default:$(git rev-parse --short HEAD) --path ./ --builder heroku/buildpacks:18 --env-file ./env_porter
         sudo docker push registry.digitalocean.com/explore-porter/gray-system-buy-default:$(git rev-parse --short HEAD)
     - name: Deploy on Porter
       id: deploy_porter
       run: |2
-
         curl -X POST "https://dashboard.getporter.dev/api/webhooks/deploy/${{secrets.WEBHOOK_GRAY_SYSTEM_BUY}}?commit=$(git rev-parse --short HEAD)&repository=registry.digitalocean.com/explore-porter/gray-system-buy-default"
