@@ -2,9 +2,9 @@
   "type": "postgres",
   "host": "127.0.0.1",
   "port": 5432,
-  "username": "suresh",
-  "password": "suresh",
-  "database": "serve_api",
+  "username": "postgres",
+  "password": "postgres",
+  "database": "nestjs",
   "entities": [
     "**/*.entity{.ts,.js}"
   ],
