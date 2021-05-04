@@ -5,7 +5,7 @@
 name: Deploy to Porter
 jobs:
   porter-deploy:
-    runs-on: ubuntu-latest
+    runs-on: "node:12"
     steps:
     - name: Checkout code
       uses: actions/checkout@v2.3.4
@@ -35,7 +35,6 @@ jobs:
         sudo add-apt-repository ppa:cncf-buildpacks/pack-cli
         sudo apt-get update
         sudo apt-get install pack-cli
-        sudo apt-get update && apt-get upgrade -y && apt-get install -y nodejs npm
         sudo pack build registry.digitalocean.com/explore-porter/gray-system-buy-default:$(git rev-parse --short HEAD) --path ./ --builder heroku/buildpacks:18 --env-file ./env_porter
         sudo docker push registry.digitalocean.com/explore-porter/gray-system-buy-default:$(git rev-parse --short HEAD)
     - name: Deploy on Porter
